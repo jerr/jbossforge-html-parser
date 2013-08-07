@@ -34,6 +34,8 @@ public class HTMLParserProviderTest
       HTMLDocument document = HTMLParser.parse(SOURCE);
       assertNotNull(document);
       assertEquals("My HTML document", document.getTitle());
+      assertNotNull(document.getAttributes());
+      assertNotNull(document.getChildren());
    }
 
 }

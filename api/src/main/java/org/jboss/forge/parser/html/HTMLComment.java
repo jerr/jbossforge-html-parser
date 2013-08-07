@@ -10,8 +10,7 @@ package org.jboss.forge.parser.html;
  * @author Jeremie Lagarde
  * 
  */
-public interface HTMLDocument extends HTMLElement
+public interface HTMLComment extends HTMLNode
 {
-   String getTitle();
-      
+
 }

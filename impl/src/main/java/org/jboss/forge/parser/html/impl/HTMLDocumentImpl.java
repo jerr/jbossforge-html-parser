@@ -18,7 +18,7 @@ public class HTMLDocumentImpl extends HTMLElementImpl<Document> implements HTMLD
 
    public HTMLDocumentImpl(Document target)
    {
-      super(target);
+      super(target,null);
    }
 
    @Override

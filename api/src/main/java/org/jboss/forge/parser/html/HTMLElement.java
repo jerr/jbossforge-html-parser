@@ -6,12 +6,18 @@
  */
 package org.jboss.forge.parser.html;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author Jeremie Lagarde
  * 
  */
-public interface HTMLDocument extends HTMLElement
+public interface HTMLElement extends HTMLNode
 {
-   String getTitle();
-      
+   String getName();
+
+   List<HTMLNode> getChildren();
+
+   Map<String, String> getAttributes();
 }
