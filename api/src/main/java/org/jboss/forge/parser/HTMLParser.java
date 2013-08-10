@@ -6,6 +6,8 @@
  */
 package org.jboss.forge.parser;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ServiceLoader;
@@ -43,5 +45,10 @@ public class HTMLParser
    public static HTMLDocument parse(String source)
    {
       return getParser().parse(source);
+   }
+
+   public static HTMLDocument parse(File file) throws FileNotFoundException
+   {
+      return getParser().parse(file);
    }
 }

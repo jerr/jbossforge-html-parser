@@ -6,6 +6,8 @@
  */
 package org.jboss.forge.parser.spi;
 
+import java.io.File;
+
 import org.jboss.forge.parser.html.HTMLDocument;
 
 /**
@@ -14,5 +16,8 @@ import org.jboss.forge.parser.html.HTMLDocument;
  */
 public interface HTMLParserProvider
 {
+
+   HTMLDocument parse(final File file);
+
    HTMLDocument parse(final String source);
 }

@@ -31,13 +31,7 @@ public class HTMLElementImpl<T extends Element> extends HTMLNodeImpl<T> implemen
    {
       super(target, parent);
    }
-
-   @Override
-   public String getName()
-   {
-      return target.nodeName();
-   }
-
+   
    @Override
    public List<HTMLNode> getChildren()
    {
@@ -56,6 +50,8 @@ public class HTMLElementImpl<T extends Element> extends HTMLNodeImpl<T> implemen
          else if (node instanceof Element)
          {
             htmlNode = new HTMLElementImpl<Element>((Element) node, this);
+         } else {
+            htmlNode = new HTMLNodeImpl<Node>( node, this);
          }
          children.add(htmlNode);
       }

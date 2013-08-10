@@ -12,5 +12,5 @@ package org.jboss.forge.parser.html;
  */
 public interface HTMLNode
 {
-
+   String getName();
 }

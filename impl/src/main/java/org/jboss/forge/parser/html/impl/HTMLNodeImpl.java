@@ -26,4 +26,10 @@ public class HTMLNodeImpl<T extends Node> implements HTMLNode
       this.parent = parent;
    }
 
+   @Override
+   public String getName()
+   {
+      return target.nodeName();
+   }
+
 }

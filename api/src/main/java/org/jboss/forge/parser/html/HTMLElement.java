@@ -15,8 +15,6 @@ import java.util.Map;
  */
 public interface HTMLElement extends HTMLNode
 {
-   String getName();
-
    List<HTMLNode> getChildren();
 
    Map<String, String> getAttributes();
